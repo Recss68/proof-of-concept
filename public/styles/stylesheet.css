@@ -1,0 +1,73 @@
+@font-face {
+    font-family: futura-bold;
+    src:url('/assets/fonts/Futura-Bold-font.ttf');
+}
+@font-face {
+    font-family: futura-medium;
+    src:url('/assets/fonts/futura-medium-bt.ttf');
+}
+@font-face {
+    font-family: futura-book;
+    src:url('/assets/fonts/Futura-Book-font.ttf');
+}
+
+:root {
+    /* colors */
+    --background-color: #fff;
+    --secondary-color: #F8F8F8;
+
+    --text-color: #000;
+    --active-color: #597C8B;
+    --hover-color: #984A4A;
+
+    /* fonts */
+    --primary-font: 'futura-bold', sans-serif;
+    --secondary-font: 'futura-medium', Tahoma;;
+    --paragraph-font: 'futura-book', Tahoma;
+
+    /* Main font sizes */
+
+    --heading-1: 3rem;
+    --heading-2: 2.625rem;
+    --heading-3: 2.5rem;
+    --heading-4: 2rem;
+    --heading-5: 1.75rem;
+    --heading-6: 1.5rem;
+    
+    /* extra font sizes */
+    --size-extral: 6rem;
+    --size-xxl: 3.75rem;
+    --size-xl: 3rem;
+    --size-lg: 2.625rem;
+    --size-md: 2.5rem;
+    --size-sm: 2rem;
+    --size-s: 1.75rem;
+    --size-xs: 1.5rem;
+    --size-xxs: 1.25rem;
+    --size-default: 1rem;
+    
+    
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+        color: var(--text-color);
+    }
+
+    h1 {
+        font-family: var(--primary-font);
+        font-size: var(--heading-1);
+    }
+    
+    h2, h3, h4, h5, h6 {
+        font-family: var(--secondary-color);
+    }
+
+    p {
+        font-family: var(--paragraph-font);
+    }
