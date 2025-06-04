@@ -18,7 +18,7 @@ const API_KEY = process.env.RIJKSMUSEUM_API_KEY;
 
 app.get('/', async function (request, response) {
     try {
-    const apiArt = await fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}&involvedMaker=Rembrandt+van+Rijn`);
+    const apiArt = await fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}&filter=10`);
     const apiArtData = await apiArt.json();
     
     response.render('index.liquid', {
