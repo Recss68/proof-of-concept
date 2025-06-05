@@ -1,6 +1,25 @@
 {% render 'partials/head.liquid' %}
 
-    {% comment %} <ul>
+{% include 'partials/header.liquid' %}
+
+    <main>
+        <h1 class="hero-text">
+            STORIES IN<br>
+            BETWEEN<br>
+            LAYERS<br>
+            <span class="ofpaint">OF PAINT</span>
+        </h1>
+        <div class="hero">
+            <span class="diagonal-bar back"></span>
+            <img class="hero-image" src="assets/images/artwork-1.png" alt="hero-image">
+            <span class="diagonal-bar"></span>
+        </div>
+    </main>
+
+{% include 'partials/footer.liquid' %}
+
+    {% comment %} 
+    <ul>
       {% for art in art %}
         <li style="margin-bottom: 20px;">
           <h2>{{ art.title }}</h2>
@@ -11,6 +30,7 @@
           <p><a href="{{ art.links.web }}" target="_blank">Bekijk op Rijksmuseum.nl</a></p>
         </li>
       {% endfor %}
-    </ul> {% endcomment %}
+    </ul> 
+    {% endcomment %}
 
 {% render 'partials/foot.liquid' %}
