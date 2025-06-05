@@ -1,0 +1,77 @@
+/* Home Page Styling */
+
+/* Header and Footer Styling */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem;
+}
+
+footer {
+    
+}
+
+/* Header and Footer Styling */
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+main {
+    .hero-text {
+        line-height: 1;
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 40px;
+        position: absolute;
+    }
+    .ofpaint {
+        margin-left: 6rem;
+    }
+    .hero-image {
+        display: inline-block;
+        width: 35rem;
+        position: absolute;
+        right: 10%;
+        top: 21%;
+    }
+}
+
+.diagonal-bar {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    width: 200%;
+    height: 30px; 
+    background-color: var(--text-color); 
+    opacity: 0.5;
+    transform: rotate(-35deg); 
+    z-index: 1; 
+}
+.back {
+    top: 43%;
+    z-index: 0;
+}
+
+footer {
+    /* height: 90vh; */
+}
+
+.degreesLink {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -12%;
+    bottom: 8%;
+}
+
+.rijksLink {
+    transform: rotate(90deg);
+    position: absolute;
+    right: -12%;
+    bottom: 8%;
+}
