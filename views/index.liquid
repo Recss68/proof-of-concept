@@ -18,19 +18,4 @@
 
 {% include 'partials/footer.liquid' %}
 
-    {% comment %} 
-    <ul>
-      {% for art in art %}
-        <li style="margin-bottom: 20px;">
-          <h2>{{ art.title }}</h2>
-          <p><strong>Kunstenaar:</strong> {{ art.principalOrFirstMaker }}</p>
-          {% if art.webImage %}
-            <img src="{{ art.webImage.url }}" alt="{{ art.title }}" width="300" />
-          {% endif %}
-          <p><a href="{{ art.links.web }}" target="_blank">Bekijk op Rijksmuseum.nl</a></p>
-        </li>
-      {% endfor %}
-    </ul> 
-    {% endcomment %}
-
 {% render 'partials/foot.liquid' %}
