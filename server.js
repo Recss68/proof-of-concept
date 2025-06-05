@@ -30,6 +30,20 @@ app.get('/', async function (request, response) {
       }
     });
 
+app.get('/artwork', async function (request, response) {
+    try {
+        const apiArt = await fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}&filter=10`);
+        const apiArtData = await apiArt.json();
+        
+    response.render('artwork.liquid', {
+            art: apiArtData.artObjects
+    });
+      } catch (error) {
+        console.error("Something went wrong in the page check error:",error);
+            response.status(500).render("error.liquid");
+      }
+    });
+
 app.set('port', process.env.PORT || 8000)
 
 app.listen(app.get('port'), function () {
