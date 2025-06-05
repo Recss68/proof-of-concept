@@ -1,6 +1,6 @@
 {% render 'partials/head.liquid' %}
 
-    <ul>
+    {% comment %} <ul>
       {% for art in art %}
         <li style="margin-bottom: 20px;">
           <h2>{{ art.title }}</h2>
@@ -11,6 +11,6 @@
           <p><a href="{{ art.links.web }}" target="_blank">Bekijk op Rijksmuseum.nl</a></p>
         </li>
       {% endfor %}
-    </ul>
+    </ul> {% endcomment %}
 
 {% render 'partials/foot.liquid' %}
