@@ -75,3 +75,22 @@ footer {
     right: -12%;
     bottom: 8%;
 }
+
+/* Artwork Page stlying */
+
+.artList {
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    li {
+        margin-bottom: 2rem;
+        list-style: none;
+        h2 {
+            font-size: var(--size-xs);
+        }
+    }
+}
