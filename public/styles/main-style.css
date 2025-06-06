@@ -7,10 +7,6 @@ header {
     padding: 1.5rem;
 }
 
-footer {
-    
-}
-
 /* Header and Footer Styling */
 
 .hamburger-menu {
@@ -56,10 +52,6 @@ main {
 .back {
     top: 43%;
     z-index: 0;
-}
-
-footer {
-    /* height: 90vh; */
 }
 
 .degreesLink {

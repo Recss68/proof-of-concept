@@ -62,7 +62,7 @@
 
 body {
     color: var(--text-color);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 h1 {
