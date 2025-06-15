@@ -2,9 +2,22 @@
 
 /* Header and Footer Styling */
 header {
+    position: fixed;
+    right: 0;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     padding: 1.5rem;
+    ul {
+        display: none;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+.menuActive {
+    display: inline-block;
 }
 
 /* Header and Footer Styling */
@@ -12,6 +25,8 @@ header {
 .hamburger-menu {
     display: flex;
     flex-direction: column;
+    background: none;
+    border: none;
     &:hover {
         transform: scale(1.1);
         transition: transform 0.3s ease-in-out;
@@ -25,6 +40,7 @@ main {
         letter-spacing: 1px;
         margin: 40px;
         position: absolute;
+        top: 13%;
     }
     .ofpaint {
         margin-left: 6rem;
@@ -34,14 +50,14 @@ main {
         width: 35rem;
         position: absolute;
         right: 10%;
-        top: 21%;
+        top: 22%;
     }
 }
 
 .diagonal-bar {
     position: absolute;
     top: 50%;
-    left: -100px;
+    left: -110px;
     width: 200%;
     height: 30px; 
     background-color: var(--text-color); 
@@ -52,6 +68,17 @@ main {
 .back {
     top: 43%;
     z-index: 0;
+}
+
+footer {
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+        &:hover {
+            color: var(--hover-color);
+            transition: color 0.3s ease-in-out;
+        }
+    }
 }
 
 .degreesLink {
