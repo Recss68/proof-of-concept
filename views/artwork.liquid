@@ -11,7 +11,7 @@
             {% if art.webImage %}
                 <img src="{{ art.webImage.url }}" alt="{{ art.title }}" width="300" />
             {% endif %}
-            <p><a href="{{ art.links.web }}" target="_blank">Bekijk op Rijksmuseum.nl</a></p>
+            <p><a href="/details/{{ art.objectNumber }}" target="_blank">Bekijk details</a></p>
             </li>
         {% endfor %}
         </ul> 
