@@ -44,6 +44,21 @@ app.get('/artwork', async function (request, response) {
       }
     });
 
+    app.get('/details/:id', async function (request, response) {
+      try {
+          const artId = request.params.id;
+          const specificArt = await fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}&q=${artId}`);
+          const artData = await specificArt.json();
+          
+      response.render('artwork.liquid', {
+              art: artData.artObjects
+      });
+        } catch (error) {
+          console.error("Something went wrong in the page check error:",error);
+              response.status(500).render("error.liquid");
+        }
+      });
+
 app.set('port', process.env.PORT || 8000)
 
 app.listen(app.get('port'), function () {
