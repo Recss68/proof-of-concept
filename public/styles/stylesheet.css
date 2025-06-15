@@ -17,7 +17,7 @@
 
 :root {
     /* colors */
-    --background-color: #fff;
+    --background-color: #EEEBE3;
     --secondary-color: #F8F8F8;
 
     --text-color: #000;
@@ -63,6 +63,7 @@
 body {
     color: var(--text-color);
     overflow-x: hidden;
+    background-color: var(--background-color);
 }
 
 h1 {
