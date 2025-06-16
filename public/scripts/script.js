@@ -24,3 +24,21 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   });
+
+  const carrousel = document.querySelector('.art-carrousel');
+  const prevBtn = document.querySelector('.art-prev');
+  const nextBtn = document.querySelector('.art-next');
+
+  const scrollAmount = () => {
+    const item = carrousel.querySelector('article');
+    const gap = parseFloat(getComputedStyle(carrousel).columnGap || 0);
+    return item.getBoundingClientRect().width + gap;
+  };
+
+  nextBtn.addEventListener('click', () => {
+    carrousel.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    carrousel.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+  });
