@@ -1,6 +1,5 @@
-/* Home Page Styling */
+/* Header Styling */
 
-/* Header and Footer Styling */
 header {
     position: fixed;
     right: 0;
@@ -9,30 +8,41 @@ header {
     justify-content: flex-end;
     align-items: flex-end;   
     padding: 1.5rem;
+    .hamburger-menu {
+        z-index: 999;
+    }
     ul {
-        display: none;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: -50vw;
+        padding: 2rem;
+        height: 100vh;
+        width: 50vw;
+        z-index: 998;
+        transition: right 0.3s ease-in-out;
     }
     li {
+        position: relative;
+        top: 30vh;
+        margin-bottom: 2rem;
         list-style: none;
+        &:hover {
+            transform: scale(1.2);
+            transition: transform 0.2s ease-in-out;
+        }
+        a {
+            font-size: var(--heading-6);
+        }
     }
 }
 
 .menuActive {
-    display: inline-block;
+    display: block;
+    right: 0;
 }
 
-/* Header and Footer Styling */
-
-.hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    background: none;
-    border: none;
-    &:hover {
-        transform: scale(1.1);
-        transition: transform 0.3s ease-in-out;
-    }
-}
+/* Home Page Styling */
 
 main {
     .hero-text {
@@ -42,6 +52,7 @@ main {
         margin: 40px;
         position: absolute;
         top: 13%;
+        z-index: -1;
     }
     .ofpaint {
         margin-left: 6rem;
@@ -52,6 +63,7 @@ main {
         position: absolute;
         right: 10%;
         top: 22%;
+        z-index: -1;
     }
 }
 
@@ -71,6 +83,8 @@ main {
     z-index: 0;
 }
 
+/* Footer Styling */
+
 footer {
     a {
         text-decoration: none;
@@ -85,7 +99,7 @@ footer {
 .degreesLink {
     transform: rotate(-90deg);
     position: absolute;
-    left: -12%;
+    left: -10%;
     bottom: 8%;
 }
 
