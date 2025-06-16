@@ -62,9 +62,9 @@
     padding: 0;
 }
 
+
 body {
     color: var(--text-color);
-    overflow-x: hidden;
     background-color: var(--background-color);
 }
 
