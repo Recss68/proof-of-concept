@@ -11,7 +11,7 @@ header {
     .hamburger-menu {
         z-index: 999;
     }
-    ul {
+    .menu-items {
         background-color: white;
         position: fixed;
         top: 0;
@@ -21,15 +21,18 @@ header {
         width: 50vw;
         z-index: 998;
         transition: right 0.3s ease-in-out;
-    }
-    li {
-        position: relative;
-        top: 30vh;
-        margin-bottom: 2rem;
-        list-style: none;
-        &:hover {
-            transform: scale(1.2);
-            transition: transform 0.2s ease-in-out;
+        &.active {
+            right: 0;
+        }
+        .nav-item {
+            position: relative;
+            top: 30vh;
+            margin-bottom: 2rem;
+            list-style: none;
+            &:hover {
+                transform: scale(1.2);
+                transition: transform 0.2s ease-in-out;
+            }
         }
         a {
             font-size: var(--heading-6);
@@ -38,7 +41,6 @@ header {
 }
 
 .menuActive {
-    display: block;
     right: 0;
 }
 
