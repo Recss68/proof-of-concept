@@ -8,6 +8,7 @@ header {
     justify-content: flex-end;
     align-items: flex-end;   
     padding: 1.5rem;
+    z-index: 1;
     .hamburger-menu {
         z-index: 999;
     }
@@ -132,19 +133,88 @@ footer {
 
 /* Artwork Page stlying */
 
-.artList {
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    li {
-        margin-bottom: 2rem;
-        list-style: none;
-        h2 {
-            font-size: var(--size-xs);
+.art-container {
+    position: relative;
+    top: 10rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .art-prev,
+  .art-next {
+    background: black;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  
+  .art-prev:hover,
+  .art-next:hover {
+    opacity: 1;
+  }
+  
+  .art-prev {
+    margin-right: 1rem;
+  }
+  
+  .art-next {
+    margin-left: 1rem;
+  }
+
+.art-carrousel {
+    overflow: auto hidden;
+    scroll-snap-type: x mandatory;
+    
+    > article {
+      container-type: scroll-state;
+      scroll-snap-align: center;
+      
+      @supports (container-type: scroll-state) {
+        > * {
+          transition: opacity .5s ease;
+          
+          @container not scroll-state(snapped: x) {
+            opacity: .25;
+          }  
         }
+      }
     }
-}
+  }
+  
+
+  
+  @layer demo.support {
+    .art-carrousel {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 100%;
+        gap: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-padding-inline: 1rem;
+      
+      &::before, &::after {
+        content: "";
+        display: block;
+        inline-size: 50vw;
+      }
+    }
+  
+    article {
+      display: grid;
+      align-content: start;
+      gap: 1ch;
+        p {
+          font-size: var(--size-xxs);
+          font-weight: 200;   
+          line-height: 1.5;
+      }
+    }
+  }
