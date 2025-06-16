@@ -55,32 +55,33 @@ main {
         z-index: -1;
     }
     .ofpaint {
-        margin-left: 6rem;
+        margin-left: 3rem;
     }
     .hero-image {
         display: inline-block;
         width: 35rem;
         position: absolute;
-        right: 10%;
-        top: 22%;
+        right: 5%;
+        top: 21%;
         z-index: -1;
     }
 }
 
 .diagonal-bar {
     position: absolute;
-    top: 50%;
-    left: -110px;
-    width: 200%;
-    height: 30px; 
-    background-color: var(--text-color); 
+    top: 60%;
+    left: 50%;
+    width: 110vw; /* een vaste breedte */
+    height: 30px;
+    background-color: var(--text-color);
     opacity: 0.5;
-    transform: rotate(-35deg); 
-    z-index: 1; 
+    transform: translateX(-50%) rotate(-35deg);
+    z-index: -1;
+    pointer-events: none; /* optioneel: voorkomt klikken */
 }
 .back {
-    top: 43%;
-    z-index: 0;
+    top: 53%;
+    z-index: -1;
 }
 
 /* Footer Styling */
@@ -99,7 +100,7 @@ footer {
 .degreesLink {
     transform: rotate(-90deg);
     position: absolute;
-    left: -10%;
+    left: -12%;
     bottom: 8%;
 }
 
