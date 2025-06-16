@@ -50,7 +50,7 @@ app.get('/artwork', async function (request, response) {
           const specificArt = await fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}&q=${artId}`);
           const artData = await specificArt.json();
           
-      response.render('artwork.liquid', {
+      response.render('details.liquid', {
               art: artData.artObjects
       });
         } catch (error) {
