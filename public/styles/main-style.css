@@ -124,20 +124,10 @@ footer {
             transition: color 0.3s ease-in-out;
         }
     }
-}
-
-.degreesLink {
-    transform: rotate(-90deg);
-    position: absolute;
-    left: -12%;
-    bottom: 8%;
-}
-
-.rijksLink {
-    transform: rotate(90deg);
-    position: absolute;
-    right: -12%;
-    bottom: 8%;
+    h5 {
+        position: sticky;
+        top: 0;
+    }
 }
 
 /* Artwork Page stlying */
