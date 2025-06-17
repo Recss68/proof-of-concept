@@ -27,7 +27,7 @@
             {% assign parts = art.longTitle | split: ',' %}
             {{ parts | last | strip }}
         </p>
-        <span>Zie Details</span>
+        <a href="/details/{{ art.objectNumber }}"><i class="fa-solid fa-circle-info"></i> Zie Details</a>
       </div>
     </div>
     {% endfor %}

@@ -200,7 +200,6 @@ footer {
     font-size: 0.95rem;
   }
   
-  .art-details span {
-    font-size: 0.85rem;
-    color: #666;
+  .art-details a {
+    text-decoration: underline;
   }
