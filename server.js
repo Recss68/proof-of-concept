@@ -32,7 +32,7 @@ app.get('/', async function (request, response) {
 
 app.get('/artwork', async function (request, response) {
     try {
-        const apiArt = await fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}&filter=10`);
+        const apiArt = await fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}`);
         const apiArtData = await apiArt.json();
         
     response.render('artwork.liquid', {

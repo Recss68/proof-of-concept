@@ -21,6 +21,7 @@
     --secondary-color: #F8F8F8;
 
     --text-color: #000;
+    --heading-color: #B5875F;
     --white-text: #fff;
     --active-color: #597C8B;
     --hover-color: #984A4A;
@@ -53,7 +54,6 @@
     --size-xxs: 1.25rem;
     --size-default: 1rem;
     
-    
 }
     
 * {
@@ -66,6 +66,7 @@
 body {
     color: var(--text-color);
     background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
 h1 {

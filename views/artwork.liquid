@@ -2,42 +2,12 @@
 
 {% include 'partials/header.liquid' %}
 
-<section class="art-container">
-
-  <button class="art-prev" aria-label="Vorige slide">&lt;</button>
-
-  <section class="art-carrousel">
-    {% for art in art %}
-        <article> 
-            <a href="/details/{{art.objectNumber}}">
-            {% if art.webImage %}
-                <img src="{{ art.webImage.url }}" alt="{{ art.title }}" width="300" />
-            {% endif %}
-            <h3>{{ art.title }}</h3>
-            <p>{{ art.longTitle }}</p>
-                </a>
-        </article>
-    {% endfor %}
-  </section>
-
-  <button class="art-next" aria-label="Volgende slide">&gt;</button>
-
+<section class="artwork-main">
+    <h1>ARTWORK</h1>
+    <h6>STORIES IN BETWEEN LAYERS OF PAINT</h6>
 </section>
 
-    {% comment %} <section class="artList">
-        <ul>
-        {% for art in art %}
-            <li>
-            <h2>{{ art.title }}</h2>
-            <p><strong>Kunstenaar:</strong> {{ art.principalOrFirstMaker }}</p>
-            {% if art.webImage %}
-                <img src="{{ art.webImage.url }}" alt="{{ art.title }}" width="300" />
-            {% endif %}
-            <p><a href="/details/{{ art.objectNumber }}" target="_blank">Bekijk details</a></p>
-            </li>
-        {% endfor %}
-        </ul> 
-    </section> {% endcomment %}
+{% include 'partials/art-list.liquid' %}
 
 {% comment %} {% include 'partials/footer.liquid' %} {% endcomment %}
 
