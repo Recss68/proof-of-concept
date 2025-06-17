@@ -1,0 +1,13 @@
+{% render 'partials/head.liquid' %}
+
+{% include 'partials/header.liquid' %}
+
+<section class="art-wall">
+    <h1>Jouw favoriete kunstwerken</h1>
+    <div class="fav-container">
+        {% include 'partials/art-list.liquid' %}
+    </div>
+</section>   
+
+{% render 'partials/foot.liquid' %}
+
