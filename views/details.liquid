@@ -2,14 +2,11 @@
 
 {% include 'partials/header.liquid' %}
 
-        {% for art in art %}
-            <h2>{{ art.title }}</h2>
-            <p><strong>Kunstenaar:</strong> {{ art.principalOrFirstMaker }}</p>
-            {% if art.webImage %}
-                <img src="{{ art.webImage.url }}" alt="{{ art.title }}" width="300" />
-            {% endif %}
-            <p><a href="{{ art.links.web }}" target="_blank">Bekijk op Rijksmuseum.nl</a></p>
-        {% endfor %}
+{% comment %} <div class="myOwnDiv" data-270-model="hva-pictureframe1-horizontal" data-270-width="500px" data-270-height="500px"></div> {% endcomment %}
+    {% comment %} <a class="test" href="/artwork">Go Back</a> {% endcomment %}
+    <section class="art-wall">
+        {% include 'partials/single-art.liquid' %}
+    </section>
 
 {% comment %} {% include 'partials/footer.liquid' %} {% endcomment %}
 

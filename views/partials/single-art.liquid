@@ -1,0 +1,17 @@
+<h2 class="sr-only">Artwork Frame</h2>
+{% for art in art %}
+    <h2>{{ art.title }}</h2>
+    {% if art.webImage %}
+        <div class="fancy-border">
+        <img class="art-on-wall" src="{{ art.webImage.url }}" alt="{{ art.title }}" width="300" />
+        </div>
+    {% endif %}
+    <p class="maker-name"><b>Kunstenaar:</b> <i>{{ art.principalOrFirstMaker }}</i></p>
+    <p class="year-released"><b>Jaar:</b>
+        <i>
+            {% assign parts = art.longTitle | split: ',' %}
+            {{ parts | last | strip }}
+        </i>
+    </p>
+    <a href="{{ art.links.web }}" target="_blank">Bekijk op Rijksmuseum.nl</a>
+{% endfor %}
