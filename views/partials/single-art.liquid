@@ -1,5 +1,6 @@
 <h2 class="sr-only">Artwork Frame</h2>
 {% for art in art %}
+    <a href="/artwork">Terug</a>
     <h2>{{ art.title }}</h2>
     {% if art.webImage %}
         <div class="fancy-border">
@@ -14,4 +15,11 @@
         </i>
     </p>
     <a href="{{ art.links.web }}" target="_blank">Bekijk op Rijksmuseum.nl</a>
+            <form method="POST" action="/details">
+                <input type="hidden" name="objectNumber" value="{{ art.objectNumber }}">
+                <button type="submit" class="like-button">
+                <i class="fa-solid fa-heart heart-icon"></i>
+                <i class="fa-solid fa-flag flag-icon" aria-hidden="true"></i>
+                </button>
+            </form>
 {% endfor %}
