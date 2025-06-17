@@ -236,6 +236,9 @@ footer {
   
     h2 {
         font-size: var(--size-s);
+        @media (min-width: 1024px) {
+            font-size: var(--size-lg);
+        }
     }
     a {
       color: var(--white-text);
@@ -246,6 +249,9 @@ footer {
 .art-on-wall {
     box-shadow: 7px 7px 5px black;
     width: 60vw;
+    @media (min-width: 1024px) {
+        width: 25vw;
+    }
 }
 
 .maker-name {
