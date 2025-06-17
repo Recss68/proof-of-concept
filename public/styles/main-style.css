@@ -271,5 +271,71 @@ footer {
       25;
   }
 
+  .like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 3rem;            
+    position: relative;         
+    transition: transform 0.5s linear;
+    &:hover {
+        transform: scale(1.5) rotate(5deg);
+      }
+  }
   
+  /* hart-vul-animatie */
+  .heart-icon {
+    color: var(--heart-color);
+    -webkit-text-stroke: 2px var(--heart-color);
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(var(--heart-color), var(--heart-color)) no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 100% 0%;
+    background-position: 0 100%;
+    transition: background-size 0.6s ease-in-out;
+  }
+  
+  /* hart vullen bij hover */
+  .like-button:hover .heart-icon {
+    background-size: 100% 100%;
+  }
+  
+  .flag-icon {
+    position: absolute;
+    top: -5%;                     
+    left: 90%;                  
+    transform: translateX(-50%) translateY(-120%);
+    font-size: 1.2rem;         
+    color: var(--fav-color);              
+    opacity: 0;
+    transition:
+      transform 0.6s ease-in-out,
+      opacity 0.6s ease-in-out;
+    pointer-events: none;
+  }
+  
+  /* bij hover: vlag schuift naar hart en wordt zichtbaar */
+  .like-button:hover .flag-icon {
+    transform: translateX(-50%) translateY(0%);
+    opacity: 1;
+  }
+
+  /* Favorieten Pagina Component */
+  
+  .fav-container {
+    width: 90vw;
+    padding: 10px;
+    color: var(--text-color);
+    a {
+        color: var(--text-color);
+    }
+    .list-title {
+        display: none;
+    }
+    .art-details, h2{
+        text-align: left;
+    }
+  }
   
