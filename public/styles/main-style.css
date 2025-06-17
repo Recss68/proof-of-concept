@@ -168,6 +168,17 @@ footer {
     font-size: 1.2rem;
     margin: 0.2rem 0 0 0;
   }
+
+  @keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+  }
   
   .art-list {
     flex: 1.5;
@@ -176,6 +187,9 @@ footer {
   }
   
   .art-item {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
     display: flex;
     background-color: #f6f6f6;
     margin-bottom: 1rem;
