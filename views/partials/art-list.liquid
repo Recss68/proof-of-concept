@@ -1,0 +1,34 @@
+<div class="art-layout">
+{% for art in art %}
+  {% if forloop.first %}
+  <div class="featured-art">
+    <img src="{{ art.webImage.url }}" alt="{{ art.title }}">
+    <div class="caption">
+        <h2>{{ art.title }}</h2>
+        <p>
+            {{ art.principalOrFirstMaker}} - 
+            {% assign parts = art.longTitle | split: ',' %}
+            {{ parts | last | strip }}
+        </p>
+    </div>
+  </div>
+    {% endif %}
+{% endfor %}
+
+  <div class="art-list">
+    {% for art in art %}
+    <div class="art-item">
+      <img src="{{ art.webImage.url }}" alt="{{ art.title }}">
+      <div class="art-details">
+        <h3>{{ art.title }}</h3>
+        <p>
+            {{ art.principalOrFirstMaker}} - 
+            {% assign parts = art.longTitle | split: ',' %}
+            {{ parts | last | strip }}
+        </p>
+        <span>Zie Details</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
