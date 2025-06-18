@@ -1,9 +1,7 @@
-Ontwerp en maak een data driven online concept voor een opdrachtgever
-
-De instructies voor deze opdracht staan in: [docs/INSTRUCTIONS.md](https://github.com/fdnd-task/proof-of-concept/blob/main/docs/INSTRUCTIONS.md)
-
 # Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Stories in between layers of paint...
+Bekijk hier de unieke kunstwerken van het Rijksmuseum!
+( psst.. Je kunt de kunstwerken bekijken met een 3D viewer als je naar de detail pagina gaat 😮 )
 
 ## Inhoudsopgave
 
