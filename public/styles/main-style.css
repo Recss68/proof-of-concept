@@ -324,6 +324,11 @@ footer {
 
 /* Favorieten Pagina Component */
 
+.fav-title {
+  padding-top: 16rem;
+  font-size: var(--size-lg);
+}
+
 .fav-container {
   width: 90vw;
   padding: 10px;
