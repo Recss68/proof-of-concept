@@ -1,7 +1,6 @@
-# Titel
-Stories in between layers of paint...
-Bekijk hier de unieke kunstwerken van het Rijksmuseum!
-( psst.. Je kunt de kunstwerken bekijken met een 3D viewer als je naar de detail pagina gaat 😮 )
+# Stories in between layers of paint...
+## Bekijk hier de unieke kunstwerken van het Rijksmuseum!
+### ( psst.. Je kunt de kunstwerken bekijken met een 3D viewer als je naar de detail pagina gaat 😮 )
 
 ## Inhoudsopgave
 
