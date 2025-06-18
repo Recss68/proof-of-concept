@@ -73,9 +73,6 @@ const API_KEY = process.env.RIJKSMUSEUM_API_KEY;
               text: objectNumber
             })
           });
-      
-          const result = await response.json();
-          console.log('Bericht opgeslagen:', result);
 
           res.redirect(`/details/${objectNumber}`);
       
