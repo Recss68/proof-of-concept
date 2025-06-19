@@ -8,8 +8,8 @@ if (typeof TSDViewer !== 'undefined') {
 
     TSDViewer.create($wanttobemodel, {
         model: 'hva-pictureframe3-horizontal',
-        width: '500px',
-        height: '500px',
+        width: '100vw',
+        height: '100%',
         cameraZoomLevel: 0.5,
         cameraPosition: '0',
         plugins: 'customiser',
