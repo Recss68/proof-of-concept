@@ -264,14 +264,6 @@ footer {
   }
 }
 
-.maker-name {
-  font-size: var(--size-s);
-}
-
-.year-released {
-  font-size: var(--size-xs);
-}
-
 .fancy-border {
   display: inline-block;
   /* margin: 1rem; */
