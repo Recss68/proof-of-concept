@@ -69,12 +69,12 @@ const API_KEY = process.env.RIJKSMUSEUM_API_KEY;
               'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-              from: 'recep',
+              from: 'recep2',
               text: objectNumber
             })
           });
 
-          res.redirect(`/details/${objectNumber}`);
+          res.redirect(`/details/${objectNumber}?success=true`);
       
         } catch (error) {
           console.error("Something went wrong in the page check error:",error);
@@ -85,7 +85,7 @@ const API_KEY = process.env.RIJKSMUSEUM_API_KEY;
       app.get('/favorites', async (req, res) => {
         try {
           // 1. Alleen berichten van 'recep' ophalen (gefilterd via Directus)
-          const response = await fetch('https://fdnd.directus.app/items/messages?filter[from][_eq]=recep');
+          const response = await fetch('https://fdnd.directus.app/items/messages?filter[from][_eq]=recep2');
           const data = await response.json();
       
           // 2. Verzamel unieke objectNumbers
