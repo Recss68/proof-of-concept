@@ -5,7 +5,14 @@
 <section class="art-wall">
     <h1 class="fav-title">Jouw favoriete kunstwerken</h1>
     <div class="fav-container">
-        {% include 'partials/art-list.liquid' %}
+        {% if art.size > 0 %}
+            {% include 'partials/art-list.liquid' %}
+        {% else %}
+            <div class="empty-state">
+            <p>😢 Je hebt nog geen favorieten toegevoegd.</p>
+            <a href="/artwork" class="button">Bekijk kunstwerken</a>
+            </div>
+        {% endif %}
     </div>
 </section>   
 
