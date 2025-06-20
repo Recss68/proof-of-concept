@@ -25,3 +25,30 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
+  // Loader tonen bij form submit
+  const form = document.querySelector('form[action="/details"]');
+  const loader = document.getElementById('loader');
+
+  if (form && loader) {
+    form.addEventListener('submit', function () {
+      loader.classList.remove('hidden');
+    });
+  }
+
+  // Success message tonen als URL query het aangeeft
+  const urlParams = new URLSearchParams(window.location.search);
+  const isSuccess = urlParams.get('success');
+
+  if (isSuccess === 'true') {
+    const successMessage = document.getElementById('successMessage');
+    if (successMessage) {
+      successMessage.classList.remove('hidden');
+
+      // (Optioneel) Na 3 seconden verbergen
+      setTimeout(() => {
+        successMessage.classList.add('hidden');
+      }, 3000);
+    }
+  }
+
+
