@@ -322,6 +322,37 @@ footer {
   opacity: 1;
 }
 
+.feedback-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #333;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Favorieten Pagina Component */
 
 .fav-title {
@@ -343,4 +374,20 @@ footer {
   h2 {
     text-align: left;
   }
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: var(--white-text);
+}
+
+.empty-state .button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #000;
+  color: var(--white-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
 }
