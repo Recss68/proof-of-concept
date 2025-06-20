@@ -14,6 +14,12 @@
             {{ parts | last | strip }}
         </i>
     </p>
+        <div class="feedback-container">
+            <div class="loader hidden" id="loader"></div>
+            <div class="success-message hidden" id="successMessage">
+                <p>✅ Kunstwerk succesvol in favorieten geplaatst</p>
+            </div>
+        </div>
     <a href="{{ art.links.web }}" target="_blank">Bekijk op Rijksmuseum.nl</a>
             <form method="POST" action="/details">
                 <input type="hidden" name="objectNumber" value="{{ art.objectNumber }}">
