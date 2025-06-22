@@ -14,6 +14,10 @@
 ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge\&logo=render\&logoColor=white)
 ![Directus](https://img.shields.io/badge/directus-%2364f.svg?style=for-the-badge\&logo=directus\&logoColor=white)
 
+## 🎯 Doel van het project
+
+Kunstwerken kunnen kiezen op een soort product page en de details kunnen bekijken met een 3d viewer op de detail pagina
+
 ## 📑 Inhoudsopgave
 
 * [📖 Beschrijving](#beschrijving)
