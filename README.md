@@ -4,6 +4,16 @@
 
 *(psst... Je kunt de kunstwerken bekijken met een 3D viewer als je naar de detailpagina gaat 😮)*
 
+## 💻 Tech Stack:
+
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge\&logo=css3\&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge\&logo=html5\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge\&logo=javascript\&logoColor=%23F7DF1E)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge\&logo=express\&logoColor=%2361DAFB)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge\&logo=node.js\&logoColor=white)
+![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge\&logo=render\&logoColor=white)
+![Directus](https://img.shields.io/badge/directus-%2364f.svg?style=for-the-badge\&logo=directus\&logoColor=white)
+
 ## 📑 Inhoudsopgave
 
 * [📖 Beschrijving](#beschrijving)
@@ -24,8 +34,9 @@ Ook is het mogelijk om kunstwerken te liken en dit terug te zien in je **favorie
 
 ### 🖼️ Illustratie
 
-![Afbeelding van WhatsApp op 2025-06-18 om 12 04 33\_848f14cc-left](https://github.com/user-attachments/assets/26842453-ec4c-4fbe-ae85-94290a011ce5)
-![dekstop-front](https://github.com/user-attachments/assets/62717bd7-2b07-443d-bafc-35f00f1c8711)
+<img width="550" alt="Image" src="https://github.com/user-attachments/assets/26842453-ec4c-4fbe-ae85-94290a011ce5"/>
+
+<img width="220" alt="Image" src="https://github.com/user-attachments/assets/62717bd7-2b07-443d-bafc-35f00f1c8711"/>
 
 ---
 
