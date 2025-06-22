@@ -88,7 +88,8 @@ In dit project wordt gebruik gemaakt van **Express JS**.
 
 ## 🔗 Bronnen
 
-*(Hier kun je bronnen en gebruikte documentatie toevoegen)*
+* https://docs.270degrees.nl/
+* https://data.rijksmuseum.nl/docs/
 
 ---
 
