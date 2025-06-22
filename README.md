@@ -52,12 +52,12 @@ Daarnaast kunnen ze kunstwerken **liken** en toevoegen aan hun persoonlijke **fa
 
 Tijdens het testen van de website met **Lighthouse** en **PageSpeed Insights** kwamen er een aantal prestatieproblemen naar voren. De belangrijkste oorzaken van vertraging waren:
 
-📸 Te grote en niet-geoptimaliseerde afbeeldingen (WebP ontbreekt)
-🕒 Traag reagerende server (soms >2 seconden)
-🧹 Veel ongebruikte CSS en JavaScript
-🧱 Blokkerende scripts en third-party code
-📐 Geen `width`/`height` op afbeeldingen → layoutverschuivingen
-🧠 Lazy loading vertraagt zichtbare content
+* 📸 Te grote en niet-geoptimaliseerde afbeeldingen (WebP ontbreekt)
+* 🕒 Traag reagerende server (soms >2 seconden)
+* 🧹 Veel ongebruikte CSS en JavaScript
+* 🧱 Blokkerende scripts en third-party code
+* 📐 Geen `width`/`height` op afbeeldingen → layoutverschuivingen
+* 🧠 Lazy loading vertraagt zichtbare content
 
 De pagina’s **Art** en **Details** scoorden het laagst vanwege de zware 3D-viewer en het grote netwerkverkeer (soms >18 MB).
 **Favorites** presteerde het best, maar ook daar waren nog optimalisaties mogelijk.
