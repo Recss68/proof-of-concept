@@ -4,7 +4,7 @@
     <h2>{{ art.title }}</h2>
     {% if art.webImage %}
         <div class="fancy-border" id="wanttobemodel">
-        <img class="art-on-wall" src="{{ art.webImage.url }}" alt="{{ art.title }}" width="300" />
+        <img class="art-on-wall" src="{{ art.webImage.url }}" alt="{{ art.title }}" loading="lazy" width="300" />
         </div>
     {% endif %}
     <p class="maker-name"><b>Kunstenaar:</b> <i>{{ art.principalOrFirstMaker }}</i></p>

@@ -2,7 +2,7 @@
 {% for art in art %}
   {% if forloop.first %}
   <div class="featured-art">
-    <img src="{{ art.webImage.url }}" alt="{{ art.title }}">
+    <img src="{{ art.webImage.url }}" alt="{{ art.title }}" loading="lazy">
     <div class="caption">
         <h2>{{ art.title }}</h2>
         <p>
@@ -19,7 +19,7 @@
     <h2 class="list-title">Rijksmuseum</h2>
     {% for art in art %}
     <div class="art-item">
-      <img src="{{ art.webImage.url }}" alt="{{ art.title }}">
+      <img src="{{ art.webImage.url }}" alt="{{ art.title }}" loading="lazy">
       <div class="art-details">
         <h3>{{ art.title }}</h3>
         <p>
