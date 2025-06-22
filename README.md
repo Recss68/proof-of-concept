@@ -36,7 +36,7 @@ Ook is het mogelijk om kunstwerken te liken en dit terug te zien in je **favorie
 
 <img width="550" alt="Image" src="https://github.com/user-attachments/assets/62717bd7-2b07-443d-bafc-35f00f1c8711"/>
 
-<img width="350" alt="Image" src="https://github.com/user-attachments/assets/26842453-ec4c-4fbe-ae85-94290a011ce5"/>
+<img width="250" alt="Image" src="https://github.com/user-attachments/assets/26842453-ec4c-4fbe-ae85-94290a011ce5"/>
 
 ---
 
