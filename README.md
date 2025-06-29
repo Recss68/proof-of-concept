@@ -71,12 +71,14 @@ Op de detailpagina staat de 3D viewer centraal. Dat betekent dat gebruikers dire
 
 3. Liken en bewaren
 Bezoekers kunnen kunstwerken liken, krijgen hierbij ook een state te zien of de likes ook daadwerkelijk zijn geplaatst ( zie illustratie hier onder ). Deze likes worden opgeslagen in een favorietenlijst, zodat gebruikers hun favoriete werken makkelijk kunnen terugvinden. Dit maakt het persoonlijker en interactiever.
+
+Illustratie Like Plaatsen
 ![2025-06-29 17-51-21](https://github.com/user-attachments/assets/4e1eaae9-425c-4c38-b9f8-376aaf8ad109)
 
-4. Werkt goed op mobiel
+5. Werkt goed op mobiel
 Veel mensen gebruiken hun telefoon om websites te bekijken. Daarom is de site volledig responsive: alles past zich automatisch aan aan het schermformaat, met duidelijke knoppen en een fijne indeling.
 
-5. Toegankelijk voor iedereen
+6. Toegankelijk voor iedereen
 De kleuren hebben genoeg contrast en de website werkt ook met een toetsenbord. Zo kunnen mensen met een visuele beperking of zonder muis de site alsnog goed gebruiken.
 
 ---
