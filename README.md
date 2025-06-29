@@ -53,13 +53,31 @@ Daarnaast kunnen ze kunstwerken **liken** en toevoegen aan hun persoonlijke **fa
 
 ---
 
-## ✨ Kenmerken
+## ✨ Kenmerken / Ontwerpkeuzes
 
 * Dynamisch ingeladen kunstwerken via Rijksmuseum API
 * Interactieve 3D viewer met 270degrees.io
 * Favorietenlijst-functionaliteit
 * Responsive en toegankelijk ontwerp
 * Kunstwerkdetails: titel, kunstenaar, jaar, beschrijving, link
+
+Bij het ontwerpen van deze website heb ik goed nagedacht over hoe gebruikers de kunstwerken ervaren. De belangrijkste keuzes leg ik hieronder uit:
+
+1. Simpel en overzichtelijk
+De website heeft een rustige uitstraling met veel witruimte. Zo komt de kunst beter naar voren en raken bezoekers niet afgeleid door drukke kleuren of vormen.
+
+2. 3D viewer in de spotlight
+Op de detailpagina staat de 3D viewer centraal. Dat betekent dat gebruikers direct het kunstwerk in 3D kunnen bekijken, draaien en inzoomen — net alsof je in een museum staat.
+
+3. Liken en bewaren
+Bezoekers kunnen kunstwerken liken, krijgen hierbij ook een state te zien of de likes ook daadwerkelijk zijn geplaatst ( zie illustratie hier onder ). Deze likes worden opgeslagen in een favorietenlijst, zodat gebruikers hun favoriete werken makkelijk kunnen terugvinden. Dit maakt het persoonlijker en interactiever.
+https://github.com/user-attachments/assets/23f8efb4-d1d1-4f5d-ac1a-9e1a2022d21d
+
+4. Werkt goed op mobiel
+Veel mensen gebruiken hun telefoon om websites te bekijken. Daarom is de site volledig responsive: alles past zich automatisch aan aan het schermformaat, met duidelijke knoppen en een fijne indeling.
+
+5. Toegankelijk voor iedereen
+De kleuren hebben genoeg contrast en de website werkt ook met een toetsenbord. Zo kunnen mensen met een visuele beperking of zonder muis de site alsnog goed gebruiken.
 
 ---
 
