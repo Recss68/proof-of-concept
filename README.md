@@ -75,6 +75,12 @@ Bezoekers kunnen kunstwerken liken, krijgen hierbij ook een state te zien of de 
 Illustratie Like Plaatsen
 ![2025-06-29 17-51-21](https://github.com/user-attachments/assets/4e1eaae9-425c-4c38-b9f8-376aaf8ad109)
 
+4. Kunstwerken Lijst
+Bezoekers kunnen de kunstwerken pagina openen en een lijst aan allemaal verschillende kunstwerkn bekijken, met een leuke interface komen en verdwijnen de kaartjes in of uit beeld.
+
+Illustratie Kunstwerk Kaarten
+![2025-06-30 10-52-41](https://github.com/user-attachments/assets/500f778b-5e5d-474d-a361-ace2ec7f3900)
+
 5. Werkt goed op mobiel
 Veel mensen gebruiken hun telefoon om websites te bekijken. Daarom is de site volledig responsive: alles past zich automatisch aan aan het schermformaat, met duidelijke knoppen en een fijne indeling.
 
